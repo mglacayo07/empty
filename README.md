@@ -4,16 +4,16 @@ Download this project and change the name, this way you could have your own proj
 # Technologires
 * TurboGears 2.3
 * Virtualenv
-* Python
+* Python 3.5
 # Quick Guide 
 
-1. Clone project
-2. Create new virtualenv with the requirements.txt 
+1. Clone project 
+2. Create new virtualenv with the requirements.txt <br>```mkvirtualenv --python=$p3 projectEnv```<br>``` sudo pip install -r requirements.txt```
 3. Create new database empty
-4. Edit `developer.ini` and `production.ini` files and change  ```sqlalchemy.url = mysql://user:password@127.0.0.1/dbname``` with your user and password
-5. Install dependences from the project into virtualenv ```pip install -e .```
-6. Inicialize database ```gearbox setup-app -c development.ini```
-7. Run your project ```gearbox setup-app -c development.ini --reload```
+4. Edit `developer.ini` and `production.ini` files and change db connection with your user and password <br>```sqlalchemy.url = mysql://user:password@127.0.0.1/dbname``` 
+5. Install dependences from the project into virtualenv <br>```pip install -e .```
+6. Inicialize database <br>```gearbox setup-app -c development.ini```
+7. Run your project <br>```gearbox setup-app -c development.ini --reload```
 
 ### Test User
 
