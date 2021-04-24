@@ -13,7 +13,7 @@ Download this project and change the name, this way you could have your own proj
 4. Edit `developer.ini` and `production.ini` files and change db connection with your user and password <br>```sqlalchemy.url = mysql://user:password@127.0.0.1/dbname``` 
 5. Install dependences from the project into virtualenv <br>```pip install -e .```
 6. Inicialize database <br>```gearbox setup-app -c development.ini```
-7. Run your project <br>```gearbox setup-app -c development.ini --reload```
+7. Run your project <br>```gearbox serve -c development.ini --reload```
 
 ### Test User
 
